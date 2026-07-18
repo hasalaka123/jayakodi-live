@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="ජයකොඩි કන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
+    <meta name="description" content="ජයකොඩි කන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
     <meta name="keywords" content="Jayakodi Construction, house builders Sri Lanka, low cost construction Sri Lanka, home plans Sri Lanka, නිවාස ඉදිකිරීම්, ගෙවල් ප්ලෑන්, ජයකොඩි කන්ස්ට්‍රක්ෂන්">
     <meta name="author" content="JAYAKODI Construction">
 
     <!-- 🌐 Google Fonts - Noto Sans Sinhala & Oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght=400;600;700&family=Oswald:wght=600;700&family=Inter:wght=400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700&family=Oswald:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Noto Sans Sinhala', 'Inter', sans-serif;
             scroll-behavior: smooth;
             background-color: #111;
-            overflow-x: hidden; /* 👈 ලෝගෝ එක කොච්චර දකුණට ගියත් පේජ් එක Side එකට ඇදෙන්නෙ නෑ */
+            overflow-x: hidden;
         }
 
         /* 🏗️ Hero Section Main Container */
@@ -211,11 +211,11 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 🔥 ලෝගෝ එක තවත් දකුණු පැත්තටම තල්ලු කරා (තවත් 15% ක් දකුණට කලා) */
+        /* 👑 🔥 ලෝගෝ එක තවත් දකුණට සහ ටිකක් පල්ලෙහාට කලා */
         .hero-logo-container-absolute {
             position: absolute;
-            right: -25%;        /* 👈 කලින් -15% තිබ්බේ, දැන් තවත් දකුණටම ඇද්දා */
-            top: 0%;            
+            right: -25%;        
+            top: 15%;           /* 👈 කලින් 0% තිබ්බේ, දැන් ටිකක් පල්ලෙහාට (15% කින්) පහත් කලා */
             z-index: 10;
             pointer-events: none;
         }
@@ -228,7 +228,7 @@
             animation: heroLogoPulseFloat 6s ease-in-out infinite;
         }
 
-        /* 🔄 Premium 3D Pulse Float ඇනිමේෂන් එක */
+        /* 🔄 Smooth 3D Pulse Float ඇනිමේෂන් එක */
         @keyframes heroLogoPulseFloat {
             0% { 
                 transform: translateY(0px) scale(1); 
@@ -338,7 +338,7 @@
             </div>
         </div>
 
-        <!-- 💎 Absolute ලෝගෝ එක (තවත් දකුණටම කර ඇත) -->
+        <!-- 💎 Absolute ලෝගෝ එක (තවත් දකුණට සහ ටිකක් පල්ලෙහාට කර ඇත) -->
         <div class="hero-logo-container-absolute" data-aos="zoom-in" data-aos-delay="300">
             <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
         </div>
