@@ -42,7 +42,7 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 60px;
-            position: relative; /* 👈 Absolute ලෝගෝ එක මේක ඇතුලේ රඳවන්න */
+            position: relative;
             overflow: hidden;
         }
         
@@ -213,27 +213,27 @@
         /* 👑 දකුණු පැත්තේ උඩටම එන්න හදපු පට්ට ලොකු 3D ලෝගෝ CSS එක */
         .hero-logo-container-absolute {
             position: absolute;
-            right: 5%;         /* 👈 දකුණු පැත්තේ සිට දුර */
-            top: 15%;          /* 👈 උඩ සිට තියෙන දුර (උඩටම ගත්තා) */
+            right: -2%;
+            top: 2%;
             z-index: 10;
-            pointer-events: none; /* ලෝගෝ එක උඩ ක්ලික් නොවී තියාගන්න */
+            pointer-events: none;
         }
 
         .hero-logo-3d {
-            width: 580px;      /* 👈 මෙන්න මෙතනින් සයිස් එක තවත් ලොකු කරන්න පුළුවන් (580px කරා) */
+            width: 850px;
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0px 25px 40px rgba(0,0,0,0.75));
-            animation: heroLogoFloat 5s ease-in-out infinite;
+            filter: drop-shadow(0px 30px 50px rgba(0,0,0,0.85));
+            animation: heroLogoFloat 6s ease-in-out infinite;
         }
 
         @keyframes heroLogoFloat {
             0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(1.5deg); }
+            50% { transform: translateY(-25px) rotate(2deg); }
             100% { transform: translateY(0px) rotate(0deg); }
         }
 
-        /* 📱 Mobile ඩිවයිස් වලදී ලෝගෝ එක වෙනස් වෙන විදිහ (Responsive) */
+        /* 📱 Mobile ඩිවයිස් වලදී ලෝගෝ එක වෙනස් වෙන විදිහ */
         @media (max-width: 991px) {
             .hero-logo-container-absolute {
                 position: relative;
@@ -244,12 +244,12 @@
                 width: 100%;
             }
             .hero-logo-3d {
-                width: 80%;
-                max-width: 350px;
+                width: 90%;
+                max-width: 450px;
             }
         }
 
-        /* 🌈 ️නවීකරණය කරන ලද පාට 5ක සුපිරි Dynamic Gradient CSS එක */
+        /* 🌈 ️Dynamic Gradient CSS එක */
         .dynamic-color-title {
             background: linear-gradient(45deg, #ffffff, #f1c40f, #e67e22, #3498db, #9b59b6, #ffffff);
             background-size: 400% 400%;
@@ -299,11 +299,10 @@
         </div>
     </nav>
 
-    <!-- 🏗️ Hero Section (ලෝගෝ එක වෙනම Layer එකකට ගෙන දකුණු පසින් උඩටම සකසන ලදී) -->
+    <!-- 🏗️ Hero Section -->
     <header class="hero-section" data-aos="fade-up">
         <div class="container" style="position: relative; z-index: 5;">
             <div class="row align-items-center">
-                <!-- වම් පැත්තේ විස්තර කොටස -->
                 <div class="col-lg-7 text-start">
                     
                     <!-- 🏷️ Brand Name -->
@@ -330,7 +329,7 @@
             </div>
         </div>
 
-        <!-- 💎 මෙන්න මෙතනින් තමයි Absolute ක්‍රමයට පට්ට ලොකුවට උඩින්ම ලෝගෝ එක වදින්නේ -->
+        <!-- 💎 Absolute ලෝගෝ එක (දකුණේ උඩින්ම පට්ට ලොකුවට) -->
         <div class="hero-logo-container-absolute" data-aos="zoom-in" data-aos-delay="300">
             <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
         </div>
@@ -348,7 +347,7 @@
                         <span class="position-absolute bottom-0 start-0 bg-warning" style="height: 3px; width: 60px;"></span>
                     </h2>
                     <p class="lead text-white mb-4" style="line-height: 1.8; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ඉහළ ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
+                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ibhala ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
                     </p>
                     <p class="text-white-50 mb-4" style="line-height: 1.8; font-size: 1.05rem;">
                         අපගේ <strong>කාර්යක්ෂම සේවාව</strong>, <strong>සාධාරණ මිල ගණන්</strong> සහ <strong>ඉහළම ප්‍රමිතියේ අමුද්‍රව්‍ය භාවිතය</strong> නිසා අපගේ පාරිභෝගිකයන්ගේ නොබිඳුණු විශ්වාසය අපි අඛණ්ඩව දිනාගෙන ඇත්තෙමු.
@@ -376,11 +375,10 @@
 
         <hr class="border-secondary opacity-25 my-5 container">
 
-        <!-- 👨‍🦳 Dad Profile Section -->
+        <!-- 👨‍🦳 Dad Profile Section (තාත්තගේ ෆොටෝ එක සහ විස්තර) -->
         <section id="dad-profile" class="container py-5" data-aos="fade-up">
             <div class="text-center mb-5">
                 <h2 class="dynamic-color-title display-5">අපේ ප්‍රධානියා (Founder)</h2>
-                
                 <div style="height: 35px; overflow: visible;">
                     <p class="text-warning fw-semibold floating-subtitle" id="dynamic-subtitle" style="font-size: 1.15rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">
                         වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්
@@ -461,7 +459,7 @@
     <!-- 🌆 BOTTOM TRANSPARENT WRAPPER -->
     <div class="bottom-transparent-section">
 
-        <!-- 📸 Project Gallery Section -->
+        <!-- 📸 Project Gallery Section (ගෙවල් වල පින්තූර ටික) -->
         <section id="gallery" class="py-5">
             <div class="container text-center">
                 <h2 class="dynamic-color-title display-5 mb-2" data-aos="fade-up">අපගේ මෑතකාලීන ව්‍යාපෘති</h2>
@@ -524,11 +522,7 @@
                 <div class="col-md-6">
                     <div class="card contact-card-custom p-4 rounded shadow">
                         <form action="https://formsubmit.co/hasaladenuwan5@gmail.com" method="POST">
-                            
-                            <!-- 💌 නොමිලේ Auto-Reply සකසන කේතය -->
                             <input type="hidden" name="_autoresponse" value="ආයුබෝවන්, ඔබ ජයකොඩි කන්ස්ට්‍රක්ෂන් වෙත එවූ පණිවිඩය අප වෙත ලැබුණා. අපගේ නියෝජිතයෙකු ඉතා ඉක්මනින් ඔබව සම්බන්ධ කරගනු ඇත. ස්තූතියි!">
-
-                            <!-- ↩️ පණිවිඩය යැවූ පසු නැවත අපේ වෙබ් පිටුවටම හැරවීම -->
                             <input type="hidden" name="_next" value="https://hasalaka123.github.io/jayakodi-live/">
 
                             <div class="mb-3">
