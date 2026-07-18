@@ -33,15 +33,15 @@
 
         /* 🏗️ Hero Section */
         .hero-section {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('my-dad-work.jpg.jpeg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('my-dad-work.jpg.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding-top: 120px;
-            padding-bottom: 80px;
+            padding-top: 100px;
+            padding-bottom: 60px;
         }
         
         .yellow-text { color: #f1c40f; }
@@ -208,6 +208,22 @@
             100% { transform: translateY(0px); }
         }
 
+        /* 🌀 Hero Section එකේ ලොකු ලෝගෝ එක පාවෙන 3D ඇනිමේෂන් ස්ටයිල් එක */
+        .hero-logo-3d {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0px 15px 25px rgba(0,0,0,0.6));
+            animation: heroLogoFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes heroLogoFloat {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
         /* 🌈 ️නවීකරණය කරන ලද පාට 5ක සුපිරි Dynamic Gradient CSS එක */
         .dynamic-color-title {
             background: linear-gradient(45deg, #ffffff, #f1c40f, #e67e22, #3498db, #9b59b6, #ffffff);
@@ -233,10 +249,9 @@
         <i class="bi bi-whatsapp"></i>
     </a>
 
-    <!-- 🌐 Navigation Bar (3D ලෝගෝ එක සහිතව) -->
+    <!-- 🌐 Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <!-- 🚀 අලුත් 3D ලෝගෝ එක මෙතනට දාලා තියෙන්නේ මචං -->
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <img src="logo.png" alt="JAYAKODI Construction Logo" style="height: 40px; width: auto; object-fit: contain;">
                 <span class="fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 1px; font-size: 1.2rem;">
@@ -259,24 +274,25 @@
         </div>
     </nav>
 
-    <!-- 🏗️ Hero Section -->
+    <!-- 🏗️ Hero Section (ලොකු ලෝගෝ එක සමඟින්) -->
     <header class="hero-section" data-aos="fade-up">
-        <div class="container text-start">
-            <div class="row">
-                <div class="col-lg-10">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- වම් පැත්තේ විස්තර ටික -->
+                <div class="col-lg-7 text-start">
                     
                     <!-- 🏷️ Brand Name -->
-                    <div class="mb-4 d-flex flex-wrap gap-2 justify-content-start" data-aos="zoom-in" data-aos-delay="200" style="margin-top: -55px;">
-                        <span class="display-3 fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 3px; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">JAYAKODI</span>
-                        <span class="display-3 fw-bold text-warning text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 3px; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">CONSTRUCTION</span>
+                    <div class="mb-4 d-flex flex-wrap gap-2 justify-content-start" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="display-4 fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">JAYAKODI</span>
+                        <span class="display-4 fw-bold text-warning text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">CONSTRUCTION</span>
                     </div>
 
                     <!-- ✍️ සිංහල ටයිටල් එක -->
-                    <h1 class="display-3 fw-bold mt-2 text-white" style="letter-spacing: -1px; text-shadow: 3px 3px 10px rgba(0,0,0,0.85); font-size: calc(1.8rem + 2vw); text-align: left;">
+                    <h1 class="display-4 fw-bold mt-2 text-white" style="letter-spacing: -1px; text-shadow: 3px 3px 10px rgba(0,0,0,0.85); font-size: calc(1.6rem + 1.8vw); text-align: left; line-height: 1.3;">
                         විශ්වාසවන්ත සහ ගුණාත්මක <br><span class="yellow-text">ඉදිකිරීම් සේවා</span>
                     </h1>
                     
-                    <p class="lead mt-3 fs-5 text-white-50" style="font-weight: 400; text-shadow: 2px 2px 8px rgba(0,0,0,0.85); text-align: left; max-width: 700px;">
+                    <p class="lead mt-3 fs-5 text-white-50" style="font-weight: 400; text-shadow: 2px 2px 8px rgba(0,0,0,0.85); text-align: left; max-width: 600px;">
                         ඔබේ සිහිනය සැබෑ කරගන්න, වසර ගණනාවක පළපුරුද්ද සමඟින් අපි සූදානම්.
                     </p>
                     
@@ -285,6 +301,11 @@
                         <a href="#contact" class="btn btn-warning btn-lg px-4 shadow">නොමිලේ උපදෙස් ලබාගන්න</a>
                         <a href="#dad-profile" class="btn btn-outline-light btn-lg px-4 shadow">අපේ ප්‍රධානියා ගැන බලන්න</a>
                     </div>
+                </div>
+
+                <!-- 💎 දකුණු පැත්තේ ඔයා ඉල්ලපු ලොකු 3D ලෝගෝ එක (කැපිලා පේන තැන) -->
+                <div class="col-lg-5 text-center text-lg-end" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
                 </div>
             </div>
         </div>
@@ -437,7 +458,7 @@
                         <div class="card gallery-card-custom overflow-hidden rounded shadow border-0">
                             <img src="imag 1.jpg.jpeg" class="card-img-top gallery-img-small" alt="House Exterior Side">
                             <div class="card-body text-start text-white">
-                                <h5 class="fw-bold mb-1 text-warning">නිවසේ ბාහිර අලංකරණ සහ මිදුල සැලසුම් කිරීම</h5>
+                                <h5 class="fw-bold mb-1 text-warning">නිවසේ බාහිර අලංකරණ සහ මිදුල සැලසුම් කිරීම</h5>
                                 <p class="small mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-danger"></i> සාර්ථකව නිමකළ වටපිටාව</p>
                             </div>
                         </div>
@@ -491,7 +512,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label text-white-50">දුරකථන අංකය</label>
-                                <input type="tel" name="Phone" class="form-control" placeholder="දුරකථന අංකය ඇතුලත් කරන්න" required>
+                                <input type="tel" name="Phone" class="form-control" placeholder="දුරකථන අංකය ඇතුලත් කරන්න" required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label text-white-50">ඔබේ ඊමේල් ලිපිනය (Email)</label>
