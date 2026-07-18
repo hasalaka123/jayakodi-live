@@ -211,17 +211,17 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 FIXED: ලෝගෝ එක කලින් තිබ්බ තැනම (මැද) තබා, තව ටිකක් පල්ලෙහාට කලා */
+        /* 👑 FIXED: ලෝගෝ එක පල්ලෙහා මට්ටමේම තියලා තව ටිකක් වම් පැත්තට (right: 12%) කලා */
         .hero-logo-container-absolute {
             position: absolute;
-            right: 0%;          /* 👈 කලින් වැරදිලා -25% දාලා කැලේ ගියේ, දැන් හරියටම තැනට ගත්තා */
-            top: 15%;           /* 👈 උඹ ඉල්ලපු විදිහට කලින්ට වඩා ටිකක් පල්ලෙහාට කලා */
+            right: 12%;          /* 👈 කලින් 0% තිබ්බේ, දැන් වම් පැත්තට වෙන්න 12%ක් ඇතුලට ගත්තා */
+            top: 15%;           /* 👈 පල්ලෙහා මට්ටම එහෙම්මමයි */
             z-index: 10;
             pointer-events: none;
         }
 
         .hero-logo-3d {
-            width: 750px;       /* Desktop එකට ගැලපෙන සයිස් එක */
+            width: 750px;       
             height: auto;
             object-fit: contain;
             filter: drop-shadow(0px 30px 60px rgba(0,0,0,0.85));
@@ -338,7 +338,7 @@
             </div>
         </div>
 
-        <!-- 💎 Absolute ලෝගෝ එක (හරියටම තැනට ගෙන තව ටිකක් පල්ලෙහාට කර ඇත) -->
+        <!-- 💎 Absolute ලෝගෝ එක (වම් පැත්තට කර ඇත) -->
         <div class="hero-logo-container-absolute" data-aos="zoom-in" data-aos-delay="300">
             <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
         </div>
@@ -356,7 +356,7 @@
                         <span class="position-absolute bottom-0 start-0 bg-warning" style="height: 3px; width: 60px;"></span>
                     </h2>
                     <p class="lead text-white mb-4" style="line-height: 1.8; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් Extract ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
+                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ඉහළ ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
                     </p>
                     <p class="text-white-50 mb-4" style="line-height: 1.8; font-size: 1.05rem;">
                         අපගේ <strong>කාර්යක්ෂම සේවාව</strong>, <strong>සාධාරණ මිල ගණන්</strong> සහ <strong>ඉහළම ප්‍රමිතියේ අමුද්‍රව්‍ය භාවිතය</strong> නිසා අපගේ පාරිභෝගිකයන්ගේ නොබිඳුණු විශ්වාසය අපි අඛණ්ඩව දිනාගෙන ඇත්තෙමු.
