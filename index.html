@@ -208,13 +208,13 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 🌀 Hero Section එකේ ලොකු ලෝගෝ එක පාවෙන 3D ඇනිමේෂන් ස්ටයිල් එක - ප්‍රමාණය තවත් වැඩි කරන ලදී (480px) */
+        /* 🌀 Hero Section ලෝගෝ එක උපරිම ලොකු කරන්න හදපු නව CSS එක (550px) */
         .hero-logo-3d {
-            max-width: 5000px;
+            max-width: 550px;
             width: 100%;
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0px 18px 30px rgba(0,0,0,0.65));
+            filter: drop-shadow(0px 20px 35px rgba(0,0,0,0.7));
             animation: heroLogoFloat 4.5s ease-in-out infinite;
         }
 
@@ -263,7 +263,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">मुල් පිටුව</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">මුල් පිටුව</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">අප ගැන</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold text-warning" href="#dad-profile">අපේ ප්‍රධානියා</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">සේවාවන්</a></li>
@@ -274,12 +274,12 @@
         </div>
     </nav>
 
-    <!-- 🏗️ Hero Section (ලොකු ලෝගෝ එක සමඟින්) -->
+    <!-- 🏗️ Hero Section (කොටු වල ඉඩ හරියටම 6x6 බෙදා වෙන් කරන ලදී) -->
     <header class="hero-section" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
-                <!-- වම් පැත්තේ විස්තර ටික -->
-                <div class="col-lg-7 text-start">
+                <!-- වම් පැත්තේ කොටුව (col-lg-6) -->
+                <div class="col-lg-6 text-start">
                     
                     <!-- 🏷️ Brand Name -->
                     <div class="mb-4 d-flex flex-wrap gap-2 justify-content-start" data-aos="zoom-in" data-aos-delay="200">
@@ -303,8 +303,8 @@
                     </div>
                 </div>
 
-                <!-- 💎 දකුණු පැත්තේ ඔයා ඉල්ලපු ලොකු 3D ලෝගෝ එක (කැපිලා පේන තැන) -->
-                <div class="col-lg-5 text-center text-lg-end" data-aos="zoom-in" data-aos-delay="300">
+                <!-- දකුණු පැත්තේ කොටුව (col-lg-6 බවට පත් කර ලෝගෝ එකට උපරිම ඉඩ ලබා දෙන ලදී) -->
+                <div class="col-lg-6 text-center text-lg-end" data-aos="zoom-in" data-aos-delay="300">
                     <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
                 </div>
             </div>
@@ -550,7 +550,7 @@
       const subtitles = [
           "වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්",
           "නොබිඳුණු පාරිභෝගික විශ්වාසය සමඟින්",
-          "ඉහළම ප්‍රමිතියේ සහ වගකීමක් සහිතව",
+          "ඉහළම windowsill සහ වගකීමක් සහිතව",
           "ප්‍රධාන ඉදිකිරීම් අධ්‍යක්ෂකගේ සෘජු අධීක්ෂණය යටතේ"
       ];
       
