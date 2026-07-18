@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="ජයකොඩි කන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
+    <meta name="description" content="ජයකොඩි કන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
     <meta name="keywords" content="Jayakodi Construction, house builders Sri Lanka, low cost construction Sri Lanka, home plans Sri Lanka, නිවාස ඉදිකිරීම්, ගෙවල් ප්ලෑන්, ජයකොඩි කන්ස්ට්‍රක්ෂන්">
     <meta name="author" content="JAYAKODI Construction">
 
     <!-- 🌐 Google Fonts - Noto Sans Sinhala & Oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700&family=Oswald:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght=400;600;700&family=Oswald:wght=600;700&family=Inter:wght=400;600;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Noto Sans Sinhala', 'Inter', sans-serif;
             scroll-behavior: smooth;
             background-color: #111;
-            overflow-x: hidden; /* 👈 ලෝගෝ එක දකුණටම යනකොට Horizontal Scrollbar එකක් එන එක නවත්තන්න */
+            overflow-x: hidden; /* 👈 ලෝගෝ එක කොච්චර දකුණට ගියත් පේජ් එක Side එකට ඇදෙන්නෙ නෑ */
         }
 
         /* 🏗️ Hero Section Main Container */
@@ -211,11 +211,11 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 🔥 ලෝගෝ එක තවත් දකුණු පැත්තටම තල්ලු කරා */
+        /* 👑 🔥 ලෝගෝ එක තවත් දකුණු පැත්තටම තල්ලු කරා (තවත් 15% ක් දකුණට කලා) */
         .hero-logo-container-absolute {
             position: absolute;
-            right: -15%;        /* 👈 කලින් -10% තිබ්බේ, දැන් තවත් දකුණු පැත්තටම ඇද්දා */
-            top: 0%;            /* 👈 උඩ සීමාවටම කලා */
+            right: -25%;        /* 👈 කලින් -15% තිබ්බේ, දැන් තවත් දකුණටම ඇද්දා */
+            top: 0%;            
             z-index: 10;
             pointer-events: none;
         }
@@ -225,23 +225,23 @@
             height: auto;
             object-fit: contain;
             filter: drop-shadow(0px 30px 60px rgba(0,0,0,0.9));
-            animation: heroLogoPulseFloat 6s ease-in-out infinite; /* 👈 අලුත්ම Smooth 3D Pulse Float ඇනිමේෂන් එක */
+            animation: heroLogoPulseFloat 6s ease-in-out infinite;
         }
 
-        /* 🔄 අලුත්ම Premium 3D Pulse Float ඇනිමේෂන් එක */
+        /* 🔄 Premium 3D Pulse Float ඇනිමේෂන් එක */
         @keyframes heroLogoPulseFloat {
             0% { 
                 transform: translateY(0px) scale(1); 
             }
             50% { 
-                transform: translateY(-20px) scale(1.03); /* සිනිදුවට උඩට යන ගමන් පොඩ්ඩක් ත්‍රිමාණව ඉදිරියට එනවා */
+                transform: translateY(-20px) scale(1.03); 
             }
             100% { 
                 transform: translateY(0px) scale(1); 
             }
         }
 
-        /* 📱 Mobile ඩිවයිස් වලදී ලෝගෝ එක වෙනස් වෙන විදිහ */
+        /* 📱 Mobile ඩිවයිස් වලදී ලෝගෝ එක මැදට එන විදිහ */
         @media (max-width: 991px) {
             .hero-logo-container-absolute {
                 position: relative;
@@ -254,7 +254,7 @@
             .hero-logo-3d {
                 width: 90%;
                 max-width: 450px;
-                animation: none; /* මොබයිල් වලදී සයිඩ් එකට පනින එක නවතින්න ඇනිමේෂන් ඕෆ් කලා */
+                animation: none;
             }
         }
 
@@ -338,7 +338,7 @@
             </div>
         </div>
 
-        <!-- 💎 Absolute ලෝගෝ එක (තවත් දකුණට කර අලුත් 3D Pulse Float ඇනිමේෂන් එක සමඟ) -->
+        <!-- 💎 Absolute ලෝගෝ එක (තවත් දකුණටම කර ඇත) -->
         <div class="hero-logo-container-absolute" data-aos="zoom-in" data-aos-delay="300">
             <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
         </div>
@@ -356,7 +356,7 @@
                         <span class="position-absolute bottom-0 start-0 bg-warning" style="height: 3px; width: 60px;"></span>
                     </h2>
                     <p class="lead text-white mb-4" style="line-height: 1.8; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ibala ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
+                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ඉහළ ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
                     </p>
                     <p class="text-white-50 mb-4" style="line-height: 1.8; font-size: 1.05rem;">
                         අපගේ <strong>කාර්යක්ෂම සේවාව</strong>, <strong>සාධාරණ මිල ගණන්</strong> සහ <strong>ඉහළම ප්‍රමිතියේ අමුද්‍රව්‍ය භාවිතය</strong> නිසා අපගේ පාරිභෝගිකයන්ගේ නොබිඳුණු විශ්වාසය අපි අඛණ්ඩව දිනාගෙන ඇත්තෙමු.
@@ -387,7 +387,7 @@
         <!-- 👨‍🦳 Dad Profile Section -->
         <section id="dad-profile" class="container py-5" data-aos="fade-up">
             <div class="text-center mb-5">
-                <h2 class="dynamic-color-title display-5">අපේ PRADHANAYA (Founder)</h2>
+                <h2 class="dynamic-color-title display-5">අපේ ප්‍රධානියා (Founder)</h2>
                 <div style="height: 35px; overflow: visible;">
                     <p class="text-warning fw-semibold floating-subtitle" id="dynamic-subtitle" style="font-size: 1.15rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">
                         වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්
