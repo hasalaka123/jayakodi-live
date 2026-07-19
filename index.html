@@ -27,7 +27,7 @@
             overflow-x: hidden;
         }
 
-        /* 🏗️ Hero Section Main Container (Fixed Background Issue) */
+        /* 🏗️ FIXED HERO SECTION LAYOUT */
         .hero-section {
             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('my-dad-work.jpg.jpeg');
             background-size: cover;
@@ -36,7 +36,8 @@
             min-height: 100vh;
             padding-top: 120px;
             padding-bottom: 80px;
-            position: relative;
+            display: flex;
+            align-items: center;
         }
         
         .yellow-text { color: #f1c40f; }
@@ -167,7 +168,7 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 Logo Floating Animation */
+        /* 👑 Logo Styling & Anti-wrapping Fix */
         .hero-logo-box {
             display: flex;
             justify-content: center;
@@ -176,7 +177,7 @@
         }
         .hero-logo-3d {
             width: 100%;
-            max-width: 480px; /* PC එකේදී ලෝගෝ එක ඕනවට වඩා ලොකු වී text එක යටට යාම වැලැක්වීමට සයිස් එක සීමා කලා */
+            max-width: 460px;
             height: auto;
             object-fit: contain;
             filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.8));
@@ -188,9 +189,9 @@
             100% { transform: translateY(0px); }
         }
 
-        /* Responsive Layout Fixing */
+        /* Responsive Layout Overrides */
         @media (max-width: 991px) {
-            .hero-logo-3d { max-width: 320px; margin-top: 30px; }
+            .hero-logo-3d { max-width: 320px; margin-top: 35px; }
             .hero-section { text-align: center !important; }
             .hero-section .text-start { text-align: center !important; }
             .hero-section .d-flex { justify-content: center !important; }
@@ -244,12 +245,12 @@
         </div>
     </nav>
 
-    <!-- 🏗️ HERO SECTION (Fully Re-engineered layout to prevent wrapping on PCs) -->
+    <!-- 🏗️ HERO SECTION (100% Clean Grid & Container Structure) -->
     <header class="hero-section">
-        <div class="container h-100">
-            <div class="row align-items-center min-vh-100 g-4">
+        <div class="container">
+            <div class="row align-items-center g-4">
                 
-                <!-- වම් පැත්තේ විස්තර කොටස (col-lg-7 මඟින් text එකට වැඩි ඉඩක් ලබා දී ඇත) -->
+                <!-- වම් පැත්තේ විස්තර කොටස -->
                 <div class="col-12 col-lg-7 text-start" data-aos="fade-right">
                     <div class="mb-4 d-flex flex-wrap gap-2">
                         <span class="display-4 fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">JAYAKODI</span>
@@ -270,7 +271,7 @@
                     </div>
                 </div>
 
-                <!-- දකුණු පැත්තේ ලෝගෝ කොටස (col-lg-5 මඟින් ලෝගෝ එකට නියමිත ඉඩ ලබා දී ඇත) -->
+                <!-- දකුණු පැත්තේ ලෝගෝ කොටස -->
                 <div class="col-12 col-lg-5 hero-logo-box" data-aos="fade-left">
                     <img src="logo.png" alt="JAYAKODI Logo" class="hero-logo-3d">
                 </div>
