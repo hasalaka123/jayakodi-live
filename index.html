@@ -211,34 +211,28 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 🔥 ලෝගෝ එක තවත් දකුණු පැත්තටම තල්ලු කරා */
+        /* 👑 🔥 මෙන්න මෙතන තව දකුණටම කරලා, Smooth Vertical Float එක විතරක් දැම්මා */
         .hero-logo-container-absolute {
             position: absolute;
-            right: -15%;        /* 👈 කලින් -10% තිබ්බේ, දැන් තවත් දකුණු පැත්තටම ඇද්දා */
-            top: -10%;            /* 👈 උඩ සීමාවටම කලා */
+            right: -10%;        /* 👈 කලින් -2% තිබ්බේ, දැන් තවත් දකුණු පැත්තටම ඇද්දා */
+            top: 2%;            /* 👈 උඩින්ම තියෙන්නේ */
             z-index: 10;
             pointer-events: none;
         }
 
         .hero-logo-3d {
-            width: 880px;
+            width: 850px;
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0px 30px 60px rgba(0,0,0,0.9));
-            animation: heroLogoPulseFloat 6s ease-in-out infinite; /* 👈 අලුත්ම Smooth 3D Pulse Float ඇනිමේෂන් එක */
+            filter: drop-shadow(0px 30px 50px rgba(0,0,0,0.85));
+            animation: heroLogoPureFloat 5s ease-in-out infinite; /* 👈 අලුත් Smooth ඇනිමේෂන් එක */
         }
 
-        /* 🔄 අලුත්ම Premium 3D Pulse Float ඇනිමේෂන් එක */
-        @keyframes heroLogoPulseFloat {
-            0% { 
-                transform: translateY(0px) scale(1); 
-            }
-            50% { 
-                transform: translateY(-20px) scale(1.03); /* සිනිදුවට උඩට යන ගමන් පොඩ්ඩක් ත්‍රිමාණව ඉදිරියට එනවා */
-            }
-            100% { 
-                transform: translateY(0px) scale(1); 
-            }
+        /* 🔄 Layout එක කැඩෙන්නැති පට්ට Smooth උඩ/පල්ලෙහා ඇනිමේෂන් එක */
+        @keyframes heroLogoPureFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); } /* 👈 කෙලින් උඩට විතරක් යයි */
+            100% { transform: translateY(0px); }
         }
 
         /* 📱 Mobile ඩිවයිස් වලදී ලෝගෝ එක වෙනස් වෙන විදිහ */
@@ -254,7 +248,7 @@
             .hero-logo-3d {
                 width: 90%;
                 max-width: 450px;
-                animation: none; /* මොබයිල් වලදී සයිඩ් එකට පනින එක නවතින්න ඇනිමේෂන් ඕෆ් කලා */
+                animation: none; /* මොබයිල් වලදී ඇනිමේෂන් එක ඕෆ් කරා සයිඩ් එකට පනින එක නවතින්න */
             }
         }
 
@@ -338,7 +332,7 @@
             </div>
         </div>
 
-        <!-- 💎 Absolute ලෝගෝ එක (තවත් දකුණට කර අලුත් 3D Pulse Float ඇනිමේෂන් එක සමඟ) -->
+        <!-- 💎 Absolute ලෝගෝ එක (දකුණේ තවත් සයිඩ් එකට කරලා නව ඇනිමේෂන් එක සමඟ) -->
         <div class="hero-logo-container-absolute" data-aos="zoom-in" data-aos-delay="300">
             <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
         </div>
@@ -356,7 +350,7 @@
                         <span class="position-absolute bottom-0 start-0 bg-warning" style="height: 3px; width: 60px;"></span>
                     </h2>
                     <p class="lead text-white mb-4" style="line-height: 1.8; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ibala ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
+                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ඉහළ ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
                     </p>
                     <p class="text-white-50 mb-4" style="line-height: 1.8; font-size: 1.05rem;">
                         අපගේ <strong>කාර්යක්ෂම සේවාව</strong>, <strong>සාධාරණ මිල ගණන්</strong> සහ <strong>ඉහළම ප්‍රමිතියේ අමුද්‍රව්‍ය භාවිතය</strong> නිසා අපගේ පාරිභෝගිකයන්ගේ නොබිඳුණු විශ්වාසය අපි අඛණ්ඩව දිනාගෙන ඇත්තෙමු.
