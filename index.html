@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="ජයකොඩි કන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
+    <meta name="description" content="ජයකොඩි කන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
     <meta name="keywords" content="Jayakodi Construction, house builders Sri Lanka, low cost construction Sri Lanka, home plans Sri Lanka, නිවාස ඉදිකිරීම්, ගෙවල් ප්ලෑන්, ජයකොඩි කන්ස්ට්‍රක්ෂන්">
     <meta name="author" content="JAYAKODI Construction">
 
@@ -210,7 +210,7 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 🎯 ලෝගෝ එක හරියටම මැද කොටසට (නිල් කොටුවට) සෙට් කරන CSS */
+        /* 🎯 ලෝගෝ එක කොටුව මැදට සෙට් කරන Flex CSS */
         .hero-logo-box {
             text-align: center;
             display: flex;
@@ -218,27 +218,28 @@
             align-items: center;
         }
 
+        /* 👑 ලෝගෝ එක කෙලින් කරලා, තව ලොකු කරපු CSS එක */
         .hero-logo-3d {
             width: 100%;
-            max-width: 460px; /* 👈 උඹ කියපු තැනට හරියටම සයිස් එක මැච් වෙන්න හැදුවා */
+            max-width: 580px; /* 👈 ලෝගෝ එක කලින්ට වඩා ලොකු කරා */
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.7));
-            animation: heroLogoPulseFloat 5s ease-in-out infinite;
+            filter: drop-shadow(0px 25px 45px rgba(0,0,0,0.85));
+            animation: heroLogoPulseFloat 4s ease-in-out infinite;
         }
 
-        /* 🔄 පාවෙන ඇනිමේෂන් එක */
+        /* 🔄 ඇද වෙන්නේ නැතුව කෙලින්ම විතරක් පාවෙන ඇනිමේෂන් එක */
         @keyframes heroLogoPulseFloat {
-            0% { transform: translateY(0px) scale(1); }
-            50% { transform: translateY(-10px) scale(1.02); }
-            100% { transform: translateY(0px) scale(1); }
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
         }
 
-        /* 📱 Mobile වලදී ලෝගෝ එක ටිකක් කුඩා කරන්න */
+        /* 📱 Mobile Display එකට ගැලපෙන්න */
         @media (max-width: 991px) {
             .hero-logo-3d {
-                max-width: 350px;
-                margin-top: 30px;
+                max-width: 400px;
+                margin-top: 35px;
             }
         }
 
@@ -322,7 +323,7 @@
                     </div>
                 </div>
 
-                <!-- 👉 දකුණු පැත්තේ (උඹ සලකුණු කරපු නිල් කොටුව තියෙන තැන) ලෝගෝ එක -->
+                <!-- 👉 දකුණු පැත්තේ (හරියටම නිල් කොටුව තිබුණු තැන) ලොකු කරපු කෙලින් ලෝගෝ එක -->
                 <div class="col-lg-5 hero-logo-box" data-aos="zoom-in" data-aos-delay="300">
                     <img src="logo.png" alt="JAYAKODI Logo" class="hero-logo-3d">
                 </div>
@@ -478,7 +479,7 @@
                             <img src="imag 1.jpg.jpeg" class="card-img-top gallery-img-small" alt="House Exterior Side">
                             <div class="card-body text-start text-white">
                                 <h5 class="fw-bold mb-1 text-warning">නිවසේ බාහිර අලංකරණ සහ මිදුල සැලසුම් කිරීම</h5>
-                                <p class="small mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-danger"></i> සාර්ථකව නිමකළ වටපිටාව</p>
+                                <p class="small mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-danger"></i> සාර්ථව නිමකළ වටපිටාව</p>
                             </div>
                         </div>
                     </div>
