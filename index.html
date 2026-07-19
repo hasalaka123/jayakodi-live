@@ -29,7 +29,7 @@
             font-family: 'Noto Sans Sinhala', 'Inter', sans-serif;
             scroll-behavior: smooth;
             background-color: #111;
-            overflow-x: hidden; /* 👈 ලෝගෝ එක දකුණටම යනකොට Horizontal Scrollbar එකක් එන එක නවත්තන්න */
+            overflow-x: hidden;
         }
 
         /* 🏗️ Hero Section Main Container */
@@ -211,28 +211,36 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 🔥 මෙන්න මෙතන තව දකුණටම කරලා, Smooth Vertical Float එක විතරක් දැම්මා */
+        /* 👑 🔥 ලෝගෝ එක පිළිවෙලකට දකුණු පැත්තෙන් මැදට සකස් කළා */
         .hero-logo-container-absolute {
             position: absolute;
-            right: -10%;        /* 👈 කලින් -2% තිබ්බේ, දැන් තවත් දකුණු පැත්තටම ඇද්දා */
-            top: 2%;            /* 👈 උඩින්ම තියෙන්නේ */
+            right: 5%;           /* 👈 පිටුවෙන් පිටතට නොයා දකුණු කෙළවරේ රඳවා ගත්තා */
+            top: 50%;            /* 👈 සිරස්ව මධ්‍යගත කළා (Vertically Centered) */
+            transform: translateY(-50%);
             z-index: 10;
             pointer-events: none;
         }
 
         .hero-logo-3d {
-            width: 850px;
+            width: 100%;
+            max-width: 550px;    /* 👈 ඕනෑවට වඩා විශාල වී අකුරු වැසීම වැළැක්වූවා */
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0px 30px 50px rgba(0,0,0,0.85));
-            animation: heroLogoPureFloat 5s ease-in-out infinite; /* 👈 අලුත් Smooth ඇනිමේෂන් එක */
+            filter: drop-shadow(0px 30px 60px rgba(0,0,0,0.8));
+            animation: heroLogoPulseFloat 6s ease-in-out infinite;
         }
 
-        /* 🔄 Layout එක කැඩෙන්නැති පට්ට Smooth උඩ/පල්ලෙහා ඇනිමේෂන් එක */
-        @keyframes heroLogoPureFloat {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-30px); } /* 👈 කෙලින් උඩට විතරක් යයි */
-            100% { transform: translateY(0px); }
+        /* 🔄 සිරස්ව මැද තිබෙද්දී පාවෙන සුමට 3D ඇනිමේෂන් එක */
+        @keyframes heroLogoPulseFloat {
+            0% { 
+                transform: translateY(-50%) scale(1); 
+            }
+            50% { 
+                transform: translateY(-54%) scale(1.04); /* සුදුවට උඩට ගොස් තරමක් විශාල වේ */
+            }
+            100% { 
+                transform: translateY(-50%) scale(1); 
+            }
         }
 
         /* 📱 Mobile ඩිවයිස් වලදී ලෝගෝ එක වෙනස් වෙන විදිහ */
@@ -241,14 +249,15 @@
                 position: relative;
                 right: auto;
                 top: auto;
+                transform: none;
                 margin-top: 40px;
                 text-align: center;
                 width: 100%;
             }
             .hero-logo-3d {
                 width: 90%;
-                max-width: 450px;
-                animation: none; /* මොබයිල් වලදී ඇනිමේෂන් එක ඕෆ් කරා සයිඩ් එකට පනින එක නවතින්න */
+                max-width: 420px;
+                animation: none; /* මොබයිල් වලදී ඇනිමේෂන් එක ක්‍රියා විරහිත කළා */
             }
         }
 
@@ -326,13 +335,13 @@
                     <!-- 🔘 බටන් දෙක -->
                     <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-start">
                         <a href="#contact" class="btn btn-warning btn-lg px-4 shadow">නොමිලේ උපදෙස් ලබාගන්න</a>
-                        <a href="#dad-profile" class="btn btn-outline-light btn-lg px-4 shadow">අපේ ප්‍රධානියා ගැන බලන්න</a>
+                        <a href="#dad-profile" class="btn btn-outline-light btn-lg px-4 shadow">අපේ PRADHANAYA ගැන බලන්න</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- 💎 Absolute ලෝගෝ එක (දකුණේ තවත් සයිඩ් එකට කරලා නව ඇනිමේෂන් එක සමඟ) -->
+        <!-- 💎 Absolute ලෝගෝ එක (කැපෙන්නේ නැතිවෙන්න සකස් කර ඇත) -->
         <div class="hero-logo-container-absolute" data-aos="zoom-in" data-aos-delay="300">
             <img src="logo.png" alt="JAYAKODI 3D Logo Large" class="hero-logo-3d">
         </div>
