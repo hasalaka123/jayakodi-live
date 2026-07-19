@@ -11,15 +11,10 @@
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- AOS CSS CDN (Scroll Animation) -->
+    <!-- AOS CSS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="ජයකොඩි කන්ස්ට්‍රක්ෂන් (JAYAKODI Construction) - වසර 30ක පළපුරුද්ද සමඟින් විශ්වාසවන්තව සහ සාධාරණ මිලකට ඔබේ සිහින නිවස ශක්තිමත්ව ඉදිකරගන්න අප අමතන්න.">
-    <meta name="keywords" content="Jayakodi Construction, house builders Sri Lanka, low cost construction Sri Lanka, home plans Sri Lanka, නිවාස ඉදිකිරීම්, ගෙවල් ප්ලෑන්, ජයකොඩි කන්ස්ට්‍රක්ෂන්">
-    <meta name="author" content="JAYAKODI Construction">
-
-    <!-- 🌐 Google Fonts - Noto Sans Sinhala & Oswald -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700&family=Oswald:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -50,7 +45,7 @@
         .btn-warning { background-color: #f1c40f; border: none; font-weight: bold; }
         .btn-warning:hover { background-color: #d4ac0d; }
         
-        /* සේවා කොටු */
+        /* Service Cards */
         .service-card { 
             border: none; 
             box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
@@ -86,7 +81,7 @@
             transform: scale(1.1);
         }
         
-        /* "අප ගැන" Grid පින්තූර */
+        /* About Images */
         .about-grid-img {
             width: 100%;
             height: 160px;
@@ -94,14 +89,13 @@
             border: 4px solid #ffffff;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             border-radius: 12px;
-            transition: transform 0.4s ease, border-color 0.4s ease;
+            transition: 0.4s;
         }
         .about-grid-img:hover {
             transform: scale(1.08) rotate(1deg);
             border-color: #f1c40f;
         }
 
-        /* Combined Background Wrapper 1 */
         .combined-bg-section {
             background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('WhatsApp Image 2026-07-16 at 19.43.58_2.jpeg.jpeg');
             background-size: cover;
@@ -111,7 +105,6 @@
             color: white;
         }
 
-        /* 🌆 Combined Background Wrapper 2 */
         .bottom-transparent-section {
             background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.82)), url('WhatsApp Image 2026-07-16 at 19.43.12.jpeg');
             background-size: cover;
@@ -121,7 +114,6 @@
             color: white;
         }
 
-        /* 📸 Transparent Gallery Cards */
         .gallery-card-custom {
             background: rgba(255, 255, 255, 0.06) !important;
             backdrop-filter: blur(12px);
@@ -132,51 +124,29 @@
             border-color: rgba(241, 196, 15, 0.5) !important;
             box-shadow: 0 10px 25px rgba(241, 196, 15, 0.15);
         }
-        .gallery-img-large {
-            height: 450px;
-            object-fit: cover;
-            transition: 0.5s;
-        }
-        .gallery-img-small {
-            height: 250px;
-            object-fit: cover;
-            transition: 0.5s;
-        }
-        .gallery-img-large:hover, .gallery-img-small:hover {
-            transform: scale(1.03);
-        }
+        .gallery-img-large { height: 450px; object-fit: cover; transition: 0.5s; }
+        .gallery-img-small { height: 250px; object-fit: cover; transition: 0.5s; }
+        .gallery-img-large:hover, .gallery-img-small:hover { transform: scale(1.03); }
 
-        /* 📞 Transparent Contact Form Card */
         .contact-card-custom {
             background: rgba(255, 255, 255, 0.06) !important;
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            color: white !important;
         }
         .contact-card-custom .form-control {
             background: rgba(0, 0, 0, 0.4) !important;
             border: 1px solid rgba(255, 255, 255, 0.2) !important;
             color: white !important;
         }
-        .contact-card-custom .form-control::placeholder {
-            color: rgba(255, 255, 255, 0.5) !important;
-        }
-        .contact-card-custom .form-control:focus {
-            border-color: #f1c40f !important;
-            box-shadow: 0 0 10px rgba(241, 196, 15, 0.3) !important;
-        }
 
-        /* 👨‍🦳 Dad Profile Section Custom Styles */
         .dad-profile-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
         }
 
-        /* 🔲 SQUARE BORDER WITH GLOW EFFECT */
         .dad-img-container {
             position: relative;
             display: inline-block;
@@ -186,75 +156,56 @@
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(241, 196, 15, 0.6);
             overflow: hidden;
-            background-color: transparent;
         }
+        .dad-img { width: 100%; height: 100%; object-fit: cover; }
 
-        .dad-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            mix-blend-mode: multiply; 
-            filter: contrast(1.1) brightness(1.05);
-        }
-
-        /* 🎈 ත්‍රිමාණව පාවෙන උපමාතෘකාවේ CSS ස්ටයිල් */
         .floating-subtitle {
             display: inline-block;
-            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
             animation: floatUpDown 3s ease-in-out infinite;
         }
-
         @keyframes floatUpDown {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-8px); }
             100% { transform: translateY(0px); }
         }
 
-        /* 🎯 ලෝගෝ එක කොටුව මැදට සෙට් කරන Flex CSS */
+        /* 👑 Logo Layout & Animation Style */
         .hero-logo-box {
-            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
         }
-
-        /* 👑 ලෝගෝ එක 700px වලට ලොකු කරලා කෙලින්ම පාවෙන්න හදපු CSS */
         .hero-logo-3d {
             width: 100%;
-            max-width: 700px;
+            max-width: 600px;
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0px 30px 50px rgba(0,0,0,0.9));
-            animation: heroLogoPulseFloat 4s ease-in-out infinite;
+            filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.8));
+            animation: heroLogoFloat 4s ease-in-out infinite;
         }
-
-        /* 🔄 ඇද වෙන්නේ නැතුව කෙලින්ම විතරක් පාවෙන ඇනිමේෂන් එක */
-        @keyframes heroLogoPulseFloat {
+        @keyframes heroLogoFloat {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
 
-        /* 📱 Mobile Display එකේදී ඕනවට වඩා ලොකු නොවී ලස්සනට පේන්න */
         @media (max-width: 991px) {
-            .hero-logo-3d {
-                max-width: 450px;
-                margin-top: 35px;
-            }
+            .hero-logo-3d { max-width: 400px; margin-top: 30px; }
+            .hero-section { text-align: center !important; }
+            .hero-section .text-start { text-align: center !important; }
+            .d-flex { justify-content: center !important; }
+            .hero-section p { margin-left: auto; margin-right: auto; text-align: center; }
         }
 
-        /* 🌈 ️Dynamic Gradient CSS එක */
         .dynamic-color-title {
-            background: linear-gradient(45deg, #ffffff, #f1c40f, #e67e22, #3498db, #9b59b6, #ffffff);
+            background: linear-gradient(45deg, #ffffff, #f1c40f, #e67e22, #3498db, #ffffff);
             background-size: 400% 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: dynamicColorShift 10s ease infinite;
             font-weight: 800 !important;
-            text-shadow: 0px 4px 15px rgba(0,0,0,0.3);
         }
-
         @keyframes dynamicColorShift {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
@@ -264,17 +215,17 @@
 </head>
 <body>
 
-    <!-- 💬 Floating WhatsApp Button -->
-    <a href="https://wa.me/94785738903?text=Hi%20JAYAKODI%20Construction,%20මට%20නිවසක්%20ඉදිකිරීම්%20පිළිබඳව%20විස්තර%20දැනගන්න%20ඕනේ." class="whatsapp-float" target="_blank">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/94785738903?text=Hi%20JAYAKODI%20Construction" class="whatsapp-float" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
 
-    <!-- 🌐 Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="logo.png" alt="JAYAKODI Construction Logo" style="height: 40px; width: auto; object-fit: contain;">
-                <span class="fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 1px; font-size: 1.2rem;">
+                <img src="logo.png" alt="Logo" style="height: 40px; width: auto;">
+                <span class="fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif;">
                     <span class="yellow-text">JAYAKODI</span> Construction
                 </span>
             </a>
@@ -288,55 +239,50 @@
                     <li class="nav-item"><a class="nav-link fw-bold text-warning" href="#dad-profile">අපේ ප්‍රධානියා</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">සේවාවන්</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">ව්‍යාපෘති</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">සම්බන්ධ කරගන්න</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">සම්බන්ධ කරන්න</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 🏗️ Hero Section (ලෝගෝ එක PC එකේ දකුණටත් Mobile එකේ යටටත් 100% හරිගස්සන ලද කොටස) -->
+    <!-- 🏗️ FIXED HERO SECTION (දැන් හරියටම වම සහ දකුණ වැඩ කරයි) -->
     <header class="hero-section" data-aos="fade-up">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center">
                 
-                <!-- 👈 විස්තර (PC එකේදී වම් පැත්තේ පෙනෙයි, Mobile එකේදී මුලින්ම උඩින් පෙනෙයි) -->
+                <!-- වම් පැත්තේ විස්තර කොටස -->
                 <div class="col-12 col-md-6 col-lg-6 text-start">
-                    
-                    <!-- 🏷️ Brand Name -->
-                    <div class="mb-4 d-flex flex-wrap gap-2 justify-content-start" data-aos="zoom-in" data-aos-delay="200">
-                        <span class="display-4 fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">JAYAKODI</span>
-                        <span class="display-4 fw-bold text-warning text-uppercase" style="font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">CONSTRUCTION</span>
+                    <div class="mb-4 d-flex flex-wrap gap-2" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="display-4 fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">JAYAKODI</span>
+                        <span class="display-4 fw-bold text-warning text-uppercase" style="font-family: 'Oswald', sans-serif; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">CONSTRUCTION</span>
                     </div>
 
-                    <!-- ✍️ ටයිටල් එක -->
-                    <h1 class="display-4 fw-bold mt-2 text-white" style="letter-spacing: -1px; text-shadow: 3px 3px 10px rgba(0,0,0,0.85); font-size: calc(1.6rem + 1.8vw); text-align: left; line-height: 1.3;">
+                    <h1 class="display-4 fw-bold mt-2 text-white" style="text-shadow: 3px 3px 10px rgba(0,0,0,0.85); font-size: calc(1.6rem + 1.8vw); line-height: 1.3;">
                         විශ්වාසවන්ත සහ ගුණාත්මක <br><span class="yellow-text">ඉදිකිරීම් සේවා</span>
                     </h1>
                     
-                    <p class="lead mt-3 fs-5 text-white-50" style="font-weight: 400; text-shadow: 2px 2px 8px rgba(0,0,0,0.85); text-align: left; max-width: 550px;">
+                    <p class="lead mt-3 fs-5 text-white-50" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.85); max-width: 550px;">
                         ඔබේ සිහිනය සැබෑ කරගන්න, වසර ගණනාවක පළපුරුද්ද සමඟින් අපි සූදානම්.
                     </p>
                     
-                    <!-- 🔘 බටන් දෙක -->
-                    <div class="d-flex flex-column flex-sm-row gap-3 mt-4 justify-content-start">
+                    <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
                         <a href="#contact" class="btn btn-warning btn-lg px-4 shadow">නොමිලේ උපදෙස් ලබාගන්න</a>
                         <a href="#dad-profile" class="btn btn-outline-light btn-lg px-4 shadow">අපේ PRADHANAYA ගැන බලන්න</a>
                     </div>
                 </div>
 
-                <!-- 👉 ලෝගෝ එක (PC එකේදී හරියටම දකුණු පැත්තෙන් පෙනෙයි, Mobile එකේදී විස්තර වලට යටින් පෙනෙයි) -->
+                <!-- දකුණු පැත්තේ ලෝගෝ කොටස -->
                 <div class="col-12 col-md-6 col-lg-6 hero-logo-box" data-aos="zoom-in" data-aos-delay="300">
                     <img src="logo.png" alt="JAYAKODI Logo" class="hero-logo-3d">
                 </div>
 
-            </div>
-        </div>
+            </div> <!-- row end -->
+        </div> <!-- container end -->
     </header>
 
     <!-- TOP SECTION WRAPPER -->
     <div class="combined-bg-section">
-        
-        <!-- 👨‍🔧 About Section -->
+        <!-- About Section -->
         <section id="about" class="container py-5" data-aos="fade-up">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
@@ -344,28 +290,19 @@
                         කවුද අපි?
                         <span class="position-absolute bottom-0 start-0 bg-warning" style="height: 3px; width: 60px;"></span>
                     </h2>
-                    <p class="lead text-white mb-4" style="line-height: 1.8; font-weight: 600; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
-                        अපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ඉහළ ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
+                    <p class="lead text-white mb-4" style="line-height: 1.8; font-weight: 600;">
+                        අපි වසර ගණනාවක සිට ලංකාව පුරාම නිවාස සහ ගොඩනැගිලි විශ්වාසවන්තව සහ ඉතාමත් ඉහළ ප්‍රමිතියකින් යුතුව ඉදිකර දෙනු ලබන ප්‍රමුඛ පෙළේ කණ්ඩායමකි.
                     </p>
-                    <p class="text-white-50 mb-4" style="line-height: 1.8; font-size: 1.05rem;">
-                        අපගේ <strong>කාර්යක්ෂම සේවාව</strong>, <strong>සාධාරණ මිල ගණන්</strong> සහ <strong>ඉහළම ප්‍රමිතියේ අමුද්‍රව්‍ය භාවිතය</strong> නිසා අපගේ පාරිභෝගිකයන්ගේ නොබිඳුණු විශ්වාසය අපි අඛණ්ඩව දිනාගෙන ඇත්තෙමු.
+                    <p class="text-white-50 mb-4" style="line-height: 1.8;">
+                        අපගේ කාර්යක්ෂම සේවාව, සාධාරණ මිල ගණන් සහ ඉහළම ප්‍රමිතියේ අමුද්‍රව්‍ය භාවිතය නිසා අපගේ පාරිභෝගිකයන්ගේ නොබිඳුණු විශ්වාසය අපි අඛණ්ඩව දිනාගෙන ඇත්තෙමු.
                     </p>
                 </div>
-                
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6">
                     <div class="row g-3">
-                        <div class="col-6">
-                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&auto=format&fit=crop" alt="Construction Work 1" class="about-grid-img">
-                        </div>
-                        <div class="col-6">
-                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" alt="Construction Work 2" class="about-grid-img" style="margin-top: 15px;">
-                        </div>
-                        <div class="col-6" style="margin-top: -15px;">
-                            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7eed?q=80&w=400&auto=format&fit=crop" alt="Construction Work 3" class="about-grid-img">
-                        </div>
-                        <div class="col-6">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" alt="Construction Work 4" class="about-grid-img">
-                        </div>
+                        <div class="col-6"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&auto=format&fit=crop" class="about-grid-img"></div>
+                        <div class="col-6"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=400&auto=format&fit=crop" class="about-grid-img" style="margin-top: 15px;"></div>
+                        <div class="col-6" style="margin-top: -15px;"><img src="https://images.unsplash.com/photo-1581094288338-2314dddb7eed?q=80&w=400&auto=format&fit=crop" class="about-grid-img"></div>
+                        <div class="col-6"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" class="about-grid-img"></div>
                     </div>
                 </div>
             </div>
@@ -373,47 +310,26 @@
 
         <hr class="border-secondary opacity-25 my-5 container">
 
-        <!-- 👨‍🦳 Dad Profile Section -->
+        <!-- Dad Profile Section -->
         <section id="dad-profile" class="container py-5" data-aos="fade-up">
             <div class="text-center mb-5">
                 <h2 class="dynamic-color-title display-5">අපේ PRADHANAYA (Founder)</h2>
-                <div style="height: 35px; overflow: visible;">
-                    <p class="text-warning fw-semibold floating-subtitle" id="dynamic-subtitle" style="font-size: 1.15rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">
-                        වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්
-                    </p>
-                </div>
+                <p class="text-warning fw-semibold floating-subtitle" id="dynamic-subtitle">වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්</p>
             </div>
-            
             <div class="dad-profile-card">
                 <div class="row align-items-center g-4">
-                    <div class="col-lg-4 text-center" data-aos="zoom-in">
+                    <div class="col-lg-4 text-center">
                         <div class="dad-img-container mb-3">
                             <img src="dad profile.jpg.png" alt="ඩබ්. ඒ. ජයකොඩි" class="dad-img">
                         </div>
                         <h4 class="fw-bold text-white mb-1">ඩබ්. ඒ. ජයකොඩි</h4>
                         <p class="text-warning mb-0">ප්‍රධාන ඉදිකිරීම් අධ්‍යක්ෂක</p>
                     </div>
-                    
                     <div class="col-lg-8 text-white">
                         <h3 class="fw-bold text-warning mb-3">සභාපතිතුමාගේ පණිවිඩය</h3>
-                        <p class="lead" style="font-size: 1.1rem; line-height: 1.8;">
-                            "අපගේ එකම අරමුණ ඔබ ජීවිත කාලය පුරාම හරි හම්බ කරගත් මුදලට උපරිම සාධාරණයක් ඉටු කරමින්, පරම්පරා ගණනාවකට නොසැලී පවතින ශක්තිමත් නිවසක් හෝ ගොඩනැගිල්ලක් ඉදිකර දීමයි. විශ්වාසය සහ ගුණාත්මකභාවය අපේ pretzels ප්‍රධානතම වටිනාකමයි."
+                        <p class="lead" style="line-height: 1.8;">
+                            "අපගේ එකම අරමුණ ඔබ ජීවිත කාලය පුරාම හරි හම්බ කරගත් මුදලට උපරිම සාධාරණයක් ඉටු කරමින්, පරම්පරා ගණනාවකට නොසැලී පවතින ශක්තිමත් නිවසක් හෝ ගොඩනැගිල්ලක් ඉදිකර දීමයි. විශ්වාසය සහ ගුණාත්මකභාවය අපේ ප්‍රධානතම වටිනාකමයි."
                         </p>
-                        
-                        <div class="row g-3 mt-4">
-                            <div class="col-md-6">
-                                <div class="p-3 rounded bg-dark bg-opacity-50 border border-secondary">
-                                    <h6 class="text-warning fw-bold"><i class="bi bi-shield-fill-check me-2"></i>වෘත්තීය පළපුරුද්ද</h6>
-                                    <p class="small text-white-50 mb-0">දශක තුනකට වැඩි කාලයක් පුරා සාර්ථකව නිම කරන ලද ව්‍යාපෘති රැසක්.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="p-3 rounded bg-dark bg-opacity-50 border border-secondary">
-                                    <h6 class="text-warning fw-bold"><i class="bi bi-people-fill me-2"></i>කැපවීම</h6>
-                                    <p class="small text-white-50 mb-0">සෑම ඉදිකිරීම් ක්ෂේත්‍රයකම වැඩ කටයුතු සෘජුවම අධීක්ෂණය කිරීම.</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -421,162 +337,81 @@
 
         <hr class="border-secondary opacity-25 my-5 container">
 
-        <!-- 🏢 Services Section -->
+        <!-- Services Section -->
         <section id="services" class="container py-5">
             <div class="text-center">
-                <h2 class="dynamic-color-title display-5 mb-5" data-aos="fade-up">අපගේ සේවාවන්</h2>
-                
+                <h2 class="dynamic-color-title display-5 mb-5">අපගේ සේවාවන්</h2>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="card service-card h-100 p-4">
-                            <div class="fs-1 mb-3">🏡</div>
-                            <h4 class="fw-bold text-dark">නිවාස ඉදිකිරීම</h4>
-                            <p class="text-secondary">මුල්ගල තැබීමේ සිට පින්තාරු කිරීම දක්වා සියලුම වැඩ කටයුතු එකම වහලක් යටින්.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="card service-card h-100 p-4">
-                            <div class="fs-1 mb-3">📐</div>
-                            <h4 class="fw-bold text-dark">ප්ලෑන් ඇඳීම</h4>
-                            <p class="text-secondary">ඔබේ ඉඩමට සහ අයවැයට ගැලපෙන නවීනතම නිවාස සැලසුම් නිර්මාණය කිරීම.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="card service-card h-100 p-4">
-                            <div class="fs-1 mb-3">🛠️</div>
-                            <h4 class="fw-bold text-dark">ප්‍රතිසංස්කරණ</h4>
-                            <p class="text-secondary">පැරණි නිවාස සහ ගොඩනැගිලි නවීන පෙනුමකට අනුව වෙනස් කර දීම.</p>
-                        </div>
-                    </div>
+                    <div class="col-md-4"><div class="card service-card h-100 p-4"><div class="fs-1 mb-3">🏡</div><h4 class="fw-bold text-dark">නිවාස ඉදිකිරීම</h4><p class="text-secondary">සියලුම වැඩ කටයුතු එකම වහලක් යටින්.</p></div></div>
+                    <div class="col-md-4"><div class="card service-card h-100 p-4"><div class="fs-1 mb-3">📐</div><h4 class="fw-bold text-dark">ප්ලෑන් ඇඳීම</h4><p class="text-secondary">නවීනතම නිවාස සැලසුම් නිර්මාණය කිරීම.</p></div></div>
+                    <div class="col-md-4"><div class="card service-card h-100 p-4"><div class="fs-1 mb-3">🛠️</div><h4 class="fw-bold text-dark">ප්‍රතිසංස්කරණ</h4><p class="text-secondary">පැරණි නිවාස නවීන පෙනුමකට වෙනස් කිරීම.</p></div></div>
                 </div>
             </div>
         </section>
-
     </div>
 
-    <!-- 🌆 BOTTOM TRANSPARENT WRAPPER -->
+    <!-- BOTTOM TRANSPARENT WRAPPER -->
     <div class="bottom-transparent-section">
-
-        <!-- 📸 Project Gallery Section -->
+        <!-- Gallery Section -->
         <section id="gallery" class="py-5">
             <div class="container text-center">
-                <h2 class="dynamic-color-title display-5 mb-2" data-aos="fade-up">අපගේ මෑතකාලීන ව්‍යාපෘති</h2>
-                <p class="text-warning fw-semibold mb-5" data-aos="fade-up">අපි ඉතාමත් සාර්ථකව නිම කරන ලද ව්‍යාපෘති කිහිපයක්</p>
-                
+                <h2 class="dynamic-color-title display-5 mb-5">අපගේ මෑතකාලීන ව්‍යාපෘති</h2>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-12" data-aos="zoom-in">
-                        <div class="card gallery-card-custom overflow-hidden rounded shadow border-0">
-                            <img src="WhatsApp Image 2026-07-16 at 19.43.12.jpeg" class="card-img-top gallery-img-large" alt="Modern Two Story House">
-                            <div class="card-body text-start p-4 text-white">
-                                <span class="badge bg-warning text-dark mb-2">Featured Project</span>
-                                <h4 class="fw-bold mb-1 text-warning">නවීන පන්නයේ සුඛෝපභෝගී දෙමහල් නිවස</h4>
-                                <p class="mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-danger"></i> නිමකළ ව්‍යාපෘතියක්</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="card gallery-card-custom overflow-hidden rounded shadow border-0">
-                            <img src="imag 1.jpg.jpeg" class="card-img-top gallery-img-small" alt="House Exterior Side">
-                            <div class="card-body text-start text-white">
-                                <h5 class="fw-bold mb-1 text-warning">නිවසේ බාහිර අලංකරණ සහ මිදුල සැලසුම් කිරීම</h5>
-                                <p class="small mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-danger"></i> සාර්ථකව නිමකළ වටපිටාව</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="card gallery-card-custom overflow-hidden rounded shadow border-0">
-                            <img src="imag 2.jpg.jpeg" class="card-img-top gallery-img-small" alt="House Interior">
-                            <div class="card-body text-start text-white">
-                                <h5 class="fw-bold mb-1 text-warning">අභ්‍යන්තර සැලසුම්කරණය (Interior Architecture)</h5>
-                                <p class="small mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-danger"></i> නිමකළ අලංකාර අභ්‍යන්තරය</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-12"><div class="card gallery-card-custom overflow-hidden rounded border-0"><img src="WhatsApp Image 2026-07-16 at 19.43.12.jpeg" class="card-img-top gallery-img-large"><div class="card-body text-start p-4 text-white"><h4 class="fw-bold text-warning">දෙමහල් නිවස</h4></div></div></div>
+                    <div class="col-md-6"><div class="card gallery-card-custom overflow-hidden rounded border-0"><img src="imag 1.jpg.jpeg" class="card-img-top gallery-img-small"></div></div>
+                    <div class="col-md-6"><div class="card gallery-card-custom overflow-hidden rounded border-0"><img src="imag 2.jpg.jpeg" class="card-img-top gallery-img-small"></div></div>
                 </div>
             </div>
         </section>
 
         <hr class="border-secondary opacity-25 my-5 container">
 
-        <!-- 📞 Contact Section -->
-        <section id="contact" class="container py-5" data-aos="slide-up">
+        <!-- Contact Section -->
+        <section id="contact" class="container py-5">
             <h2 class="dynamic-color-title display-5 text-center mb-5">මිල ගණන් කැඳවීම් සහ විමසීම්</h2>
             <div class="row g-5 align-items-center">
                 <div class="col-md-6">
                     <h4 class="fw-bold text-warning">අපව සම්බන්ධ කරගන්න</h4>
-                    <p class="text-white-50 mt-3" style="line-height: 1.8;">ඔබේ ඉදිකිරීම් අවශ්‍යතාවය කුමක් වුවත් අපට අමතන්න. අපි ඔබට සහනදායී ඇස්තමේන්තුවක් (Estimate) ලබාදීමට සූදානම්.</p>
-                    <div class="mt-4 text-white">
-                        <p class="mb-2"><strong>📞 :</strong> <span class="text-warning">078 573 8903</span></p>
-                        <p class="mb-2"><strong>📍 :</strong> කොළඹ, ශ්‍රී ලංකාව</p>
-                    </div>
-                    
-                    <div class="mt-4" data-aos="fade-up">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58585978713!2d79.78616422894576!3d6.92183864434685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da92c00754d8c!2sColombo!5e0!3m2!1sen!2slk!4v1710000000000!5m2!1sen!2slk" width="100%" height="220" style="border:0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); opacity: 0.85;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                    <p class="text-white-50 mt-3">📞 : <span class="text-warning">078 573 8903</span></p>
+                    <p class="mb-2">📍 : කොළඹ, ශ්‍රී ලංකාව</p>
                 </div>
-                
                 <div class="col-md-6">
                     <div class="card contact-card-custom p-4 rounded shadow">
                         <form action="https://formsubmit.co/hasaladenuwan5@gmail.com" method="POST">
-                            <input type="hidden" name="_autoresponse" value="ආයුබෝවන්, ඔබ ජයකොඩි කන්ස්ට්‍රක්ෂන් වෙත එවූ පණිවිඩය අප වෙත ලැබුණා. අපගේ නියෝජිතයෙකු ඉතා ඉක්මනින් ඔබව සම්බන්ධ කරගනු ඇත. ස්තූතියි!">
+                            <input type="hidden" name="_autoresponse" value="ස්තූතියි! ඔබගේ පණිවිඩය අප වෙත ලැබුණා.">
                             <input type="hidden" name="_next" value="https://hasalaka123.github.io/jayakodi-live/">
-
-                            <div class="mb-3">
-                                <label class="form-label text-white-50">ඔබේ නම</label>
-                                <input type="text" name="Name" class="form-control" placeholder="නම ඇතුලත් කරන්න" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label text-white-50">දුරකථන අංකය</label>
-                                <input type="tel" name="Phone" class="form-control" placeholder="දුරකථන අංකය ඇතුලත් කරන්න" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label text-white-50">ඔබේ ඊමේල් ලිපිනය (Email)</label>
-                                <input type="email" name="email" class="form-control" placeholder="example@gmail.com ඇතුලත් කරන්න" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label text-white-50">ඔබේ පණිවිඩය</label>
-                                <textarea name="Message" class="form-control" rows="4" placeholder="කරන්න ඕන වැඩේ ගැන කෙටියෙන් ලියන්න" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-warning w-100 py-2 mt-2 shadow">පණිවිඩය යවන්න</button>
+                            <div class="mb-3"><input type="text" name="Name" class="form-control" placeholder="ඔබේ නම" required></div>
+                            <div class="mb-3"><input type="tel" name="Phone" class="form-control" placeholder="දුරකථන අංකය" required></div>
+                            <div class="mb-3"><input type="email" name="email" class="form-control" placeholder="ඊමේල් ලිපිනය" required></div>
+                            <div class="mb-3"><textarea name="Message" class="form-control" rows="4" placeholder="පණිවිඩය" required></textarea></div>
+                            <button type="submit" class="btn btn-warning w-100 py-2 shadow">පණිවිඩය යවන්න</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="bg-black bg-opacity-75 text-white text-center py-4 mt-5 border-top border-secondary border-opacity-25">
+        <footer class="bg-black bg-opacity-75 text-white text-center py-4 mt-5">
             <p class="mb-0 text-white-50">&copy; 2026 JAYAKODI Construction. Created for Dad with ❤️</p>
         </footer>
-
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS CDN -->
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-          duration: 1000,
-          once: false,
-      });
+      AOS.init({ duration: 1000, once: false });
 
-      // 🔄 උපමාතෘකාව වෙලාවෙන් වෙලාවට වෙනස් කිරීමේ කේතය
       const subtitles = [
           "වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්",
           "නොබිඳුණු පාරිභෝගික විශ්වාසය සමඟින්",
-          "ඉහළම ප්‍රමිතියක් සහ වගකීමක් සහිතව",
-          "ප්‍රධාන ඉදිකිරීම් අධ්‍යක්ෂකගේ සෘජු අධීක්ෂණය යටතේ"
+          "ඉහළම ප්‍රමිතියක් සහ වගකීමක් සහිතව"
       ];
-      
       let currentIndex = 0;
       const subtitleElement = document.getElementById("dynamic-subtitle");
-
       setInterval(() => {
           subtitleElement.style.opacity = 0;
-          
           setTimeout(() => {
               currentIndex = (currentIndex + 1) % subtitles.length;
               subtitleElement.textContent = subtitles[currentIndex];
