@@ -33,7 +33,7 @@
             overflow-x: hidden;
         }
 
-        /* 🏗️ FIXED HERO SECTION LAYOUT */
+        /* 🏗️ HERO SECTION */
         .hero-section {
             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('my-dad-work.jpg.jpeg');
             background-size: cover;
@@ -133,7 +133,7 @@
         .gallery-img-small { height: 250px; object-fit: cover; transition: 0.5s; }
         .gallery-img-large:hover, .gallery-img-small:hover { transform: scale(1.03); }
 
-        /* 🛠️ CONTACT FORM INPUT FIX */
+        /* 🛠️ CONTACT FORM INPUT & PLACEHOLDER FIX */
         .contact-card-custom .form-control {
             background: rgba(0, 0, 0, 0.6) !important;
             border: 1px solid rgba(255, 255, 255, 0.3) !important;
@@ -179,7 +179,7 @@
             100% { transform: translateY(0px); }
         }
 
-        /* 👑 Logo Styling & Anti-wrapping Fix */
+        /* Logo Styling */
         .hero-logo-box {
             display: flex;
             justify-content: center;
@@ -272,9 +272,9 @@
                     <li class="nav-item"><a class="nav-link" href="#about">අප ගැන</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold text-warning" href="#dad-profile">අපේ ප්‍රධානියා</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">සේවාවන්</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">පාරිභෝගික අදහස්</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">ව්‍යාපෘති</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">ප්‍රශ්න සහ පිළිතුරු</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">සම්බන්ධ කරන්න</a></li>
                 </ul>
             </div>
@@ -302,7 +302,7 @@
                     
                     <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
                         <a href="#contact" class="btn btn-warning btn-lg px-4 shadow">නොමිලේ උපදෙස් ලබාගන්න</a>
-                        <a href="#dad-profile" class="btn btn-outline-light btn-lg px-4 shadow">අපේ PRADHANAYA ගැන බලන්න</a>
+                        <a href="#dad-profile" class="btn btn-outline-light btn-lg px-4 shadow">අපේ ප්‍රධානියා ගැන බලන්න</a>
                     </div>
                 </div>
 
@@ -347,7 +347,7 @@
         <!-- Dad Profile Section -->
         <section id="dad-profile" class="container py-5" data-aos="fade-up">
             <div class="text-center mb-5">
-                <h2 class="dynamic-color-title display-5">අපේ PRADHANAYA (Founder)</h2>
+                <h2 class="dynamic-color-title display-5">අපේ ප්‍රධානියා (Founder)</h2>
                 <p class="text-warning fw-semibold floating-subtitle" id="dynamic-subtitle">වසර 30කට අධික ක්ෂේත්‍රයේ පළපුරුද්ද සමඟින්</p>
             </div>
             <div class="dad-profile-card">
@@ -387,7 +387,7 @@
         <hr class="border-secondary opacity-25 my-5 container">
         <section id="reviews" class="container py-5" data-aos="fade-up">
             <div class="text-center mb-5">
-                <h2 class="dynamic-color-title display-5">පාරිභෝගික අදහස් (Client Reviews)</h2>
+                <h2 class="dynamic-color-title display-5">පාරිභෝගික අදහස්</h2>
                 <p class="text-white-50">අපගේ සේවාව ලබාගත් පාරිභෝගිකයින් පවසන දේ</p>
             </div>
             <div class="row g-4">
@@ -426,7 +426,14 @@
             <div class="container text-center">
                 <h2 class="dynamic-color-title display-5 mb-5">අපගේ මෑතකාලීන ව්‍යාපෘති</h2>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-12"><div class="card gallery-card-custom overflow-hidden rounded border-0"><img src="WhatsApp Image 2026-07-16 at 19.43.12.jpeg" class="card-img-top gallery-img-large"><div class="card-body text-start p-4 text-white"><h4 class="fw-bold text-warning">දෙමහල් නිවස</h4></div></div></div>
+                    <div class="col-12">
+                        <div class="card gallery-card-custom overflow-hidden rounded border-0">
+                            <img src="WhatsApp Image 2026-07-16 at 19.43.12.jpeg" class="card-img-top gallery-img-large">
+                            <div class="card-body text-start p-4 text-white">
+                                <h4 class="fw-bold text-warning">දෙමහල් නිවස</h4>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6"><div class="card gallery-card-custom overflow-hidden rounded border-0"><img src="imag 1.jpg.jpeg" class="card-img-top gallery-img-small"></div></div>
                     <div class="col-md-6"><div class="card gallery-card-custom overflow-hidden rounded border-0"><img src="imag 2.jpg.jpeg" class="card-img-top gallery-img-small"></div></div>
                 </div>
