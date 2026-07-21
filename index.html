@@ -133,10 +133,20 @@
         .gallery-img-small { height: 250px; object-fit: cover; transition: 0.5s; }
         .gallery-img-large:hover, .gallery-img-small:hover { transform: scale(1.03); }
 
+        /* 🛠️ CONTACT FORM INPUT FIX */
         .contact-card-custom .form-control {
-            background: rgba(0, 0, 0, 0.4) !important;
-            border: 1px solid rgba(255, 255, 255, 0.2) !important;
-            color: white !important;
+            background: rgba(0, 0, 0, 0.6) !important;
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            color: #ffffff !important;
+        }
+
+        .contact-card-custom .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .contact-card-custom .form-control:focus {
+            border-color: #f1c40f !important;
+            box-shadow: 0 0 8px rgba(241, 196, 15, 0.5) !important;
         }
 
         .dad-profile-card {
@@ -271,12 +281,11 @@
         </div>
     </nav>
 
-    <!-- 🏗️ HERO SECTION (Perfect 2-Column Grid) -->
+    <!-- 🏗️ HERO SECTION -->
     <header class="hero-section">
         <div class="container">
             <div class="row align-items-center g-4">
                 
-                <!-- වම් පැත්තේ විස්තර කොටස -->
                 <div class="col-12 col-lg-7 text-start" data-aos="fade-right">
                     <div class="mb-4 d-flex flex-wrap gap-2">
                         <span class="display-4 fw-bold text-white text-uppercase" style="font-family: 'Oswald', sans-serif; text-shadow: 4px 4px 10px rgba(0,0,0,0.95);">JAYAKODI</span>
@@ -297,7 +306,6 @@
                     </div>
                 </div>
 
-                <!-- දකුණු පැත්තේ ලෝගෝ කොටස -->
                 <div class="col-12 col-lg-5 hero-logo-box" data-aos="fade-left">
                     <img src="logo.png" alt="JAYAKODI Logo" class="hero-logo-3d">
                 </div>
