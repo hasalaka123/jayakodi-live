@@ -25,6 +25,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700&family=Oswald:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- 🧊 Google 3D Model Viewer Script -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
     <style>
         body {
             font-family: 'Noto Sans Sinhala', 'Inter', sans-serif;
@@ -178,9 +181,7 @@
             justify-content: flex-end;
             gap: 6px;
         }
-        .star-rating input {
-            display: none;
-        }
+        .star-rating input { display: none; }
         .star-rating label {
             font-size: 1.8rem;
             color: #444;
@@ -189,9 +190,7 @@
         }
         .star-rating input:checked ~ label,
         .star-rating label:hover,
-        .star-rating label:hover ~ label {
-            color: #f1c40f;
-        }
+        .star-rating label:hover ~ label { color: #f1c40f; }
 
         .dad-profile-card {
             background: rgba(255, 255, 255, 0.05);
@@ -263,9 +262,7 @@
             background: rgba(241, 196, 15, 0.2) !important;
             color: #fff !important;
         }
-        .accordion-body {
-            color: #ddd;
-        }
+        .accordion-body { color: #ddd; }
 
         /* Responsive Layout Overrides */
         @media (max-width: 991px) {
@@ -316,6 +313,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">අප ගැන</a></li>
                     <li class="nav-item"><a class="nav-link fw-bold text-warning" href="#dad-profile">අපේ ප්‍රධානියා</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">සේවාවන්</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#3d-house">3D සැලසුම්</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">ව්‍යාපෘති</a></li>
                     <li class="nav-item"><a class="nav-link" href="#reviews">පාරිභෝගික අදහස්</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">ප්‍රශ්න සහ පිළිතුරු</a></li>
@@ -521,6 +519,27 @@
 
     <!-- BOTTOM TRANSPARENT WRAPPER -->
     <div class="bottom-transparent-section">
+        
+        <!-- 🏡 3D INTERACTIVE HOUSE SECTION -->
+        <section id="3d-house" class="container py-5 text-center" data-aos="fade-up">
+            <h2 class="dynamic-color-title display-5 mb-2">3D interactive House View</h2>
+            <p class="text-white-50 mb-4">Mouse එකෙන් Drag කරලා හෝ Phone එකේ Touch කරලා ගෙදර 360° කැරකවලා බලන්න</p>
+            
+            <div class="d-flex justify-content-center">
+                <model-viewer 
+                    src="house.glb" 
+                    alt="3D House Model" 
+                    auto-rotate 
+                    camera-controls 
+                    shadow-intensity="1.5"
+                    exposure="1"
+                    style="width: 100%; max-width: 900px; height: 500px; background: rgba(0,0,0,0.4); border-radius: 16px; border: 1px solid rgba(241, 196, 15, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                </model-viewer>
+            </div>
+        </section>
+
+        <hr class="border-secondary opacity-25 my-5 container">
+
         <!-- Gallery Section -->
         <section id="gallery" class="py-5">
             <div class="container text-center">
